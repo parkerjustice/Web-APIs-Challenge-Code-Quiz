@@ -1,3 +1,6 @@
+<!--THIS IS NOT THE FINAL VERSION I needed to turn something in
+will revise later, a lot of google was used-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +8,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="assets/style.css" />
-
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <div class="timer">Time: <span id="time">0</span></div>
-    <div class="wrapper">
-        <div id="start-screen" class="start"></div>
-        <h1>Coding Quiz</h1>
-        <button id="start">Start</button>
-    </div>
+    <!-- Header -->
+<header class="header-title" id="header">
+  <div class="high-score-btn">
+    <div class="style-indiv">
+      <button class="high-score-btn" id="scores" type="button"> High Scores</button>
+        <p class="timer">Time:180</p>
+        </div>
+       </div>
+    </header>
+<!-- Main -->
+<main>
+    <section class="wrapper" id="challenge-begins">
+        <div class="title">
+            <h1 class="switch" id="switch-out">Coding Quiz</h1>
+        </div>
+        <div class="results" id="the-end">
+            <button id="start" class="start-btn" id="button-start">Start</button>
+        </div>
+    </section>
+<!--Questions-->
+  <section class="question-a" id="qustions">
+     <div class="q-list">
+         <div class="list">
+         <ul class="ul-questions">
+                    <h2 class="switch" id="question">Questions</h2>
+                <li class="questions-li"><button id="one" value="0" type="button"
+                    class="answer-btn">Choice One</button></li>
+                <li class="questions-li"><button id="two" value="1" type="button"
+                        class="answer-btn">Choice Two</button></li>
+                <li class="questions-li"><button id="three" value="2" type="button"
+                        class="answer-btn">Choice Three</button></li>
+                <li class="questions-li"><button id="four" value="3" type="button"
+                        class="answer-btn">Choice Four</button></li>
+                </ul>
+                <div id="right-wrong" class="font-weight-light font-italic">
+            </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="questions" class="hide">
-        <h3 id="question-title"></h3>
-    </div>
+<section class=".wrapper1" id="final-score">
+ <div class="style-indiv">
+     <div class="style-2">
+        <h2>Finished</h2>
+         <p>Final <span id="score">0</span></p>
+         <p class="p-style-1">initials
+         <span class="initials-form"><input placeholder="initials" id="initials"
+                 class="span-1"></span>
+         <button id="submit" class="submit-score">Submit</button>
+        <hr>
+    </p>
+ </div>
+</div>
+</section>
 
-    <div id="final" class="hide">
-        <h2>Finish</h2>
-        <p>score is <span id="end-score"></span></p>
-        <button id="submit">Submit</button>
+ <section id="high-scores">
+  <div class="style-indiv">
+     <div class="style-3">
+       <p><h2>High Scores</h2></p>
+           <button id="goBack" class="go-back">Back</button>
+            <button id="clearScores" class="clear-scores">Clear Scores</button>
+        </div>
     </div>
-
-    <script src="assets/script.js"></script>
+</section>
+</main>
+<script src="assets/script.js"></script>
+</main>
 </body>
 </html>
