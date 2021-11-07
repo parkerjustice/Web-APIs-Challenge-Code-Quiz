@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> JS Quiz </title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="assets/style.css" />
+
 </head>
-
 <body>
-   <header>
-       <h3>
-           High Scores
-       </h3>
-       <h3>
-           Time: <span class="time" id="timer"></span>
-       </h3>
-   </header>
-   <main id="main">
+    <div class="timer">Time: <span id="time">0</span></div>
+    <div class="wrapper">
+        <div id="start-screen" class="start"></div>
+        <h1>Coding Quiz</h1>
+        <button id="start">Start</button>
+    </div>
 
-   </main>
+    <div id="questions" class="hide">
+        <h3 id="question-title"></h3>
+    </div>
 
-<script src="script.js"></script>
+    <div id="final" class="hide">
+        <h2>Finish</h2>
+        <p>score is <span id="end-score"></span></p>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
